@@ -69,6 +69,7 @@ zeta_prompt.workspace = true
 zstd.workspace = true
 
 [dev-dependencies]
+criterion.workspace = true
 clock = { workspace = true, features = ["test-support"] }
 cloud_llm_client = { workspace = true, features = ["test-support"] }
 ctor.workspace = true
@@ -83,3 +84,7 @@ settings = { workspace = true, features = ["test-support"] }
 workspace = { workspace = true, features = ["test-support"] }
 
 zlog.workspace = true
+
+[[bench]]
+name = "kept_rate"
+harness = false
